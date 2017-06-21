@@ -1,0 +1,47 @@
+html,body{
+	margin: 0;
+	padding: 0;
+
+}
+
+html{
+	position: relative;
+	min-height: 100%;
+	width: 100%
+}
+
+body{
+	background-color: black;
+	/* margin bottom by footer height */
+	margin-bottom: 42px;
+	min-height: 100%
+	padding:0px;
+}
+
+.mx-auto{
+	width: 200px;
+	z-index: 1;
+	/*background-color: black;*/
+}
+.container-fluid{
+	/* test color */
+	/*background-color: orange;*/
+	padding:0px;
+	min-height: 100%;
+}
+.main-arena-row{
+	/*background-color: red;*/
+	/*height:100%;*/
+}
+.main-arena-col{
+	background-color: white;
+}
+.footer{
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	/* set the fixed height of the footer here */
+	height: 42px;
+	background-color: white;
+
+}
