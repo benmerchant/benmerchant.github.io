@@ -20,24 +20,27 @@ $(document).ready(function(){
 		var seconds = Math.floor((distance % (1000*60))/1000);
 
 		// insert the result into the DOM
-		var insert_this = days + ':' + hours + ':' + minutes + ':' + seconds;
-		console.info(insert_this);
+		var insert_this = numberPad(days) + ':' + numberPad(hours) + ':' + numberPad(minutes) + ':' + numberPad(seconds);
+		// console.info(insert_this);
 		clockDiv.html(insert_this);
 
+		
 		// when the countdown is completed
 		if(distance<0){
-			clearInterval(x);
+			clearInterval(timeANDdistance);
 			clockDiv.html('Shia should be 4 months gestated!');
-		}
+		} // tested, it works
 
 
 
 	}, 1000); // the 1000 is the 1 second interval
 
-
-
-
-
-
-
 });
+
+function numberPad(num){
+	var numString = num+'';
+	while(numString.length < 2){
+		numString = '0' + numString;
+	}
+	return numString;
+}
