@@ -2,7 +2,7 @@ $(document).ready(function(){
 	var clockDiv = $('#clock-div');
 
 	// the date it will all work out
-	var bonfire = new Date("Sept 25, 2017 00:00:00").getTime();
+	var bonfire = new Date("May 30, 2018 00:00:00").getTime();
 
 	// 1 second update interval
 	var timeANDdistance = setInterval(function(){
@@ -28,7 +28,7 @@ $(document).ready(function(){
 		// when the countdown is completed
 		if(distance<0){
 			clearInterval(timeANDdistance);
-			clockDiv.html('Shia should be 4 months gestated!');
+			clockDiv.html('Get teeth cleaned tomorrow.');
 		} // tested, it works
 
 
