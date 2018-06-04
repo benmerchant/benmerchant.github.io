@@ -21,33 +21,39 @@ a.homecircle > img {
   width: 65px;
 }
 
-
-div.sections {
+div.sectionss {
   height: 550px;
-  
 }
 
 div.photoFrame {
   width: 100%;
-
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+a.anchorGazz {
+  width: 75%;
 }
 img.aboutPhoto {
-  width: inherit;
   border-radius: 50%;
+  width: 100%;
+}
+div.textFrame {
+  padding: 25px;
 }
 
 #about-div {
-  background-color: #6fa2fc;
+  background-color: #a8a8a8;
 }
 #portfolio-div {
-  background-color: #70e0ef;
+  background-color: #848484;
 }
 #blog-div {
-  background-color: #64fca9;
+  background-color: #707070;
 }
 #skills-div {
-  background-color: #d8f989;
+  background-color: #515050;
 }
 #contact-div {
-  background-color: #e5e5e5;
+  background-color: #383636;
 }
