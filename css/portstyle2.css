@@ -3,15 +3,7 @@ html, body {
   margin: 0;
   font-family: 'Lato', sans-serif;
 }
-.parallax {
-  background-image: url(/imgs/vince_stock.jpg);
-  height: 100%;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  margin-bottom: -200px;
-}
+
 
 
 div.logoArea {
