@@ -1,0 +1,93 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+}
+.parallax {
+  background-image: url(/imgs/vince_stock.jpg);
+  height: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: -200px;
+}
+.arena {
+
+}
+a {
+  color: #000;
+}
+nav {
+  line-height: 2em;
+  width: 100%;
+}
+
+#nav-list {
+  margin: 0;
+  padding: 0;
+  background-color: #eee;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+#nav-list > .homecircle > img {
+  float: left;
+  width: 60px;
+  /* position: relative;
+  display: block; */
+}
+#nav-list > .list-items {
+  float: left;
+  height: 100%;
+  display: block;
+  text-align: center;
+  padding: 0 14px;
+  text-decoration: none;
+}
+.active-nav, #nav-list > .list-items:hover {
+  background-color: #000;
+  color: #fff;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.25);
+}
+#about-div {
+  padding-top: 60px;
+  background-color: #6fa2fc;
+  height: 450px;
+  border-bottom: 1px solid #dedede;
+}
+#portfolio-div {
+  padding-top: 60px;
+  background-color: #70e0ef;
+  border-bottom: 1px solid #dedede;
+  height: 450px;
+}
+#blog-div {
+  padding-top: 60px;
+  background-color: #64fca9;
+  border-bottom: 1px solid #dedede;
+  height: 450px;
+}
+#skills-div {
+  padding-top: 60px;
+  background-color: #d8f989;
+  border-bottom: 1px solid #dedede;
+  height: 450px;
+}
+#contact-div {
+  padding-top: 60px;
+  background-color: #e5e5e5;
+  border-bottom: 1px solid #dedede;
+  height: 450px;
+}
+#footer-div {
+  background-color: #000;
+  height: 200px;
+  color: lightgrey;
+  display: flex;
+  align-items: center;
+}
+#nav-list .burger {
+  display: none;
+}

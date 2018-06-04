@@ -1,0 +1,53 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+}
+.parallax {
+  background-image: url(/imgs/vince_stock.jpg);
+  height: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: -200px;
+}
+
+
+div.logoArea {
+  line-height: 3em;
+  position: fixed;
+  top: 0;
+  z-index: 20;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+a.homecircle > img {
+  float: left;
+  width: 65px;
+}
+
+
+div.sections {
+  height: 550px;
+}
+
+
+
+#about-div {
+  background-color: #6fa2fc;
+}
+#portfolio-div {
+  background-color: #70e0ef;
+}
+#blog-div {
+  background-color: #64fca9;
+}
+#skills-div {
+  background-color: #d8f989;
+}
+#contact-div {
+  background-color: #e5e5e5;
+}
