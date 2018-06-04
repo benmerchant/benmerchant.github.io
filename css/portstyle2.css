@@ -24,9 +24,17 @@ a.homecircle > img {
 
 div.sections {
   height: 550px;
+  
 }
 
+div.photoFrame {
+  width: 100%;
 
+}
+img.aboutPhoto {
+  width: inherit;
+  border-radius: 50%;
+}
 
 #about-div {
   background-color: #6fa2fc;
