@@ -40,6 +40,14 @@ img.aboutPhoto {
 }
 div.textFrame {
   padding: 25px;
+  text-align: center;
+}
+div.linkers {
+  width: 100%;
+  display: flex;
+  padding: 25px 0;
+  justify-content: center;
+  font-size: xx-large;
 }
 
 #about-div {

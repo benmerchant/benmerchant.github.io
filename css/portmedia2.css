@@ -6,7 +6,7 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    margin-bottom: -200px;
+    margin-bottom: -70px;
   }
   div.navigation {
     background-color: rgba(245, 136, 33, 1.0);
@@ -52,9 +52,7 @@
     padding: 10px 10px 10px 33px;
     color: #000;
   }
-  /* .dontScroll {
-    position: fixed;
-  } */
+
   div.sections, div.sectionss {
    padding: 5px 0;
   }
@@ -65,13 +63,15 @@
   a.gitGud {
     color: #fff;
     text-decoration: none;
+    padding: 0 10px;
   }
   div#main-arena {
     transition: 0.5s;
   }
   #footer-div {
+    padding: 5px 0;
     background-color: #000;
-    height: 200px;
+    /* height: 200px; */
     color: lightgrey;
   }
   a.topUp {
@@ -99,6 +99,11 @@
   }
   p#hiSolo {
     float: right;
+  }
+  div.sectFoot {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 15px;
   }
 
 
