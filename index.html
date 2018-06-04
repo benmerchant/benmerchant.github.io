@@ -1,59 +1,83 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="utf-8">
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-		<link rel='stylesheet' type='text/css' href='stylesheets/mainstyles.css'>
-		<title>Marten Bench</title>
-	</head>
-	<body>
-		<div class='container-fluid'>
-			
-			<nav class='navbar navbar-light bg-faded navbar-toggleable-sm' role='navigation'>
-				
-				<div class='container'>
-					
-					<div class='mx-auto text-center'>
-						<h1><a class='navbar-brand main-logo' href='#'>Marten Bench</a></h1>
-					</div>
-				</div>					
-			</nav>
-			<div class='row'>
-				<div class='col-12 gotta-light text-center'>This is the water, and this is the well. Drink full, and descend. The horse is the white of the eyes and dark within.</div>
-			</div>
-			<div class='row main-arena-row'>
-				<div class='col-sm-2'></div>
-				<div class='col-sm-8 text-center main-arena-col bg-faded rounded'>
-					<h1>Welcome!</h1>
-				</div>
-				<div class='col-sm-2'></div>
-				
-			</div>
-			<div class='row'> <!-- row 2 -->
-				<div class='col-sm-2'></div>
-				<div class='col-sm-8 text-white text-center'>
-					This website is under construction!
-				</div>
-				<div class='col-sm-2'></div>
-			</div>
-			<div class='row row-tres'> <!-- row 3 -->
-				<div class='col-sm-4'></div>
-				<div id='clock-div' class='col-sm-4 text-white text-center bg-clock rounded'>
-					# clock goes here #
-				</div>
-				<div class='col-sm-4'></div>
-			</div>
-		</div> <!-- end .container-fluid-->
-		<footer class='footer bg-faded'>
-			<div class='container text-center foot-div'>
-				<p> { ©: 2017 - 2018, author: <a target='_blank' href='https://github.com/benmerchant'>ben_merchant</a> }</p>
-			</div>
-		</footer>
-		<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/css/portstyle2.css">
+    <link rel="stylesheet" href="/css/portmedia2.css">
+    <link rel="icon" type="image/x-icon" href="/imgs/favicon.ico">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <title>Ben Merchant</title>
+  </head>
+  <body>
+    <div id="top"></div>
+    <div class="parallax"></div>
+    <div class="logoArea">
+      <a onclick="slideOut()" class="homecircle" href="#top"><img src="imgs/logo.png" alt="Home" title="Home"></a>
+      <span class="burgerWrap"  onclick="slideIn()">
+        <a href="javascript:void(0);" class="burger">
+          <span class="fa fa-bars"></span>
+        </a>
+      </span>
+    </div>
+    <div class="arena" id="main-arena">
 
-		<!-- main js -->
-		<script src="javascripts/main.js"></script>
-	</body>
+
+      <div class="navigation" id="nav-list">
+        <span class="exWrap" onclick="slideOut()">
+          <a href="javascript:void(0);" class="ex">
+            <span class="fa fa-times"></span>
+          </a>
+        </span>
+        <a class="list-items active-nav" href="#about-div" onclick="slideOut()">ABOUT</a>
+        <a class="list-items" href="#portfolio-div" onclick="slideOut()">PORTFOLIO</a>
+        <a class="list-items" href="#blog-div" onclick="slideOut()">BLOG</a>
+        <a class="list-items" href="#skills-div" onclick="slideOut()">SKILLS</a>
+        <a class="list-items" href="#contact-div" onclick="slideOut()">CONTACT</a>
+
+      </div>
+
+      <p class="hiCopy">Hi, my name is Ben Merchant.<br> I'm a full-stack web developer.</p>
+      <div class="sections" id="about-div">
+        <h2 class="headers">- about ben -</h2>
+        <a href="#top"class="topUp" onclick="slideOut()">
+          <i class="fa fa-chevron-up"></i>
+        </a>
+      </div> <!-- #end about-div -->
+      <div class="sections" id="portfolio-div">
+        <h2 class="headers">- portfolio -</h2>
+        <a href="#top" class="topUp" onclick="slideOut()">
+          <i class="fa fa-chevron-up"></i>
+        </a>
+      </div> <!-- #end portfolio-div -->
+      <div class="sections" id="blog-div">
+        <h2 class="headers">- blog -</h2>
+        <a href="#top" class="topUp" onclick="slideOut()">
+          <i class="fa fa-chevron-up"></i>
+        </a>
+      </div> <!-- #end blog-div -->
+      <div class="sections" id="skills-div">
+        <h2 class="headers">- skills -</h2>
+        <a href="#top" class="topUp" onclick="slideOut()">
+          <i class="fa fa-chevron-up"></i>
+        </a>
+      </div> <!-- #end skills-div -->
+      <div class="sections" id="contact-div">
+        <h2 class="headers">- contact -</h2>
+        <a href="#top" class="topUp" onclick="slideOut()">
+          <i class="fa fa-chevron-up"></i>
+        </a>
+      </div> <!-- #end contact-div -->
+      <div class="sections" id="footer-div">
+        <h2 class="copyThis">&copy; 2018 <a class="gitGud" href="http://github.com/benmerchant">Ben Merchant</a></h2>
+        <a href="#top" class="topUp" onclick="slideOut()">
+          <i class="fa fa-chevron-up"></i>
+        </a>
+      </div> <!-- #end footer-div -->
+    </div> <!-- #end main-arena -->
+    <script src="js/jquery-3.3.1.min.js" type="text/javascript"></script>
+    <script src="js/jqs.js" type="text/javascript"></script>
+    <script src="js/portscript2.js" type="text/javascript"></script>
+  </body>
 </html>
