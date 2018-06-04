@@ -1,0 +1,19 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+}
+div.logoArea {
+  line-height: 3em;
+  position: fixed;
+  top: 0;
+  z-index: 20;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+a.homecircle > img {
+  float: left;
+  width: 65px;
+}

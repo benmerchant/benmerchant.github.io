@@ -1,0 +1,145 @@
+
+
+span.burgerWrap, span.exWrap{
+  margin-right: 20px;
+  background-color: #fff;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* transition: all 0.3s ease-in-out; */
+  z-index: 200;
+}
+span.exWrap {
+  position: absolute;
+  top: 13px;
+  right: 0;
+}
+
+a.burger, a.ex{
+  font-size: large;
+  color: #000;
+}
+
+div.navigation a.list-items {
+  display: block;
+  text-decoration: none;
+  padding: 10px 10px 10px 33px;
+  color: #000;
+}
+
+div.sections, div.sectionss {
+ padding: 5px 0;
+}
+h2.headers, h2.copyThis{
+  text-align: center;
+  margin-bottom: 0;
+}
+a.gitGud {
+  color: #fff;
+  text-decoration: none;
+  padding: 0 10px;
+}
+div#main-arena {
+  transition: 0.5s;
+}
+#footer-div {
+  padding: 5px 0;
+  background-color: #000;
+  color: lightgrey;
+}
+a.topUp {
+  background-color: #fff;
+  padding: 5px 6px;
+  color: #000;
+}
+
+
+.hideThis {
+  display: none;
+}
+p#hiSolo {
+  float: right;
+}
+div.sectFoot {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 15px;
+}
+@media screen and (orientation: portrait) {
+  .parallax {
+    background-image: url(/imgs/benmodel3.jpg);
+    height: 100%;
+    /* background-attachment: fixed; */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: -70px;
+  }
+  div.hiDiv {
+    color: #fff;
+    font-size: 24px;
+    position: absolute;
+    top: 0;
+    margin-top: 250px;
+    background-color: #111;
+    text-align: center;
+    padding: 0 25px;
+    width: 314px;
+    transition: 0.5s;
+  }
+  div.navigation {
+    background-color: rgba(245, 136, 33, 1.0);
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 0;
+    padding-top: 175px;
+    /* padding-left: 25px; */
+    z-index: 50;
+    overflow: hidden;
+    transition: 0.5s;
+    font-size: 1.5rem;
+
+  }
+}
+@media screen and (orientation: landscape) {
+  .parallax {
+    background-image: url(/imgs/benmodel1.jpg);
+    height: 100%;
+    /* background-attachment: fixed; */
+    /* background-position: center; */
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: -70px;
+  }
+  div.hiDiv {
+    color: #fff;
+    font-size: 24px;
+    position: absolute;
+    top: 0;
+    margin-top: 125px;
+    background-color: #111;
+    text-align: center;
+    padding: 0 25px;
+    width: 314px;
+    transition: 0.5s;
+  }
+  div.navigation {
+    background-color: rgba(245, 136, 33, 1.0);
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 0;
+    padding-top: 75px;
+    /* padding-left: 25px; */
+    z-index: 50;
+    overflow: hidden;
+    transition: 0.5s;
+    font-size: 1.5rem;
+  }
+}

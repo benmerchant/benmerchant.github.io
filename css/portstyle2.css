@@ -1,25 +1,7 @@
-html, body {
-  height: 100%;
-  margin: 0;
-  font-family: 'Lato', sans-serif;
-}
 
 
 
-div.logoArea {
-  line-height: 3em;
-  position: fixed;
-  top: 0;
-  z-index: 20;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
-}
-a.homecircle > img {
-  float: left;
-  width: 65px;
-}
+
 
 div.sectionss {
   height: 550px;
@@ -65,3 +47,33 @@ div.linkers {
 #contact-div {
   background-color: #383636;
 }
+
+/* @media screen and (min-width: 600px) {
+  .parallax {
+    background-image: url(/imgs/vince_stock.jpg);
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: -200px;
+  }
+  span.burgerWrap, a.burger,
+  span.exWrap, a.ex {
+    display: none;
+  }
+  div.sections {
+    padding-top: 60px;
+  }
+  p.hiCopy {
+    color: #fff;
+    font-size: 24px;
+    position: absolute;
+    top: 0;
+    margin-top: 150px;
+    background-color: #111;
+    text-align: center;
+    padding: 10px 25px;
+
+  }
+} */
