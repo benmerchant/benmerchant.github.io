@@ -1,4 +1,4 @@
-if(document.documentElement.clientWidth<1025){
+// if(document.documentElement.clientWidth<1025){
   function slideIn(){
     window.alert('great scott');
     document.getElementById('nav-list').style.width = '300px';
@@ -14,4 +14,4 @@ if(document.documentElement.clientWidth<1025){
     document.getElementById('hiCopy').className = '';
     document.getElementById('hiSolo').className = 'hideThis';
   }
-}
+// }
