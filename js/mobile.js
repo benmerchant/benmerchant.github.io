@@ -1,6 +1,5 @@
-// if(document.documentElement.clientWidth<1025){
+
   function slideIn(){
-    window.alert('great scott');
     document.getElementById('nav-list').style.width = '300px';
     document.getElementById('main-arena').style.marginRight = '300px';
     document.getElementById('main-arena').style.marginLeft = '-300px';
@@ -8,10 +7,10 @@
     document.getElementById('hiSolo').className = '';
   }
   function slideOut(){
-    document.getElementById('nav-list').style.width = '0';
+    // live this width blank. 0 removes list on resize
+    document.getElementById('nav-list').style.width = '';
     document.getElementById('main-arena').style.marginRight = '0';
     document.getElementById('main-arena').style.marginLeft = '0';
     document.getElementById('hiCopy').className = '';
     document.getElementById('hiSolo').className = 'hideThis';
   }
-// }
