@@ -1,5 +1,6 @@
 if(document.documentElement.clientWidth<1025){
   function slideIn(){
+    window.alert('great scott');
     document.getElementById('nav-list').style.width = '300px';
     document.getElementById('main-arena').style.marginRight = '300px';
     document.getElementById('main-arena').style.marginLeft = '-300px';
