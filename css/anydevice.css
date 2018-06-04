@@ -3,17 +3,44 @@ html, body {
   margin: 0;
   font-family: 'Lato', sans-serif;
 }
-div.logoArea {
-  line-height: 3em;
-  position: fixed;
-  top: 0;
-  z-index: 20;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
+
+#about-div {
+  background-color: #a8a8a8;
 }
-a.homecircle > img {
-  float: left;
-  width: 65px;
+#portfolio-div {
+  background-color: #848484;
+}
+#blog-div {
+  background-color: #707070;
+}
+#skills-div {
+  background-color: #515050;
+}
+#contact-div {
+  background-color: #383636;
+}
+
+#footer-div {
+  padding: 5px 0;
+  background-color: #000;
+  color: lightgrey;
+}
+a.gitGud {
+  color: #fff;
+  text-decoration: none;
+  padding: 0 10px;
+}
+h2.headers, h2.copyThis{
+  text-align: center;
+  margin-bottom: 0;
+}
+div.sectFoot {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 15px;
+}
+a.topUp {
+  background-color: #fff;
+  padding: 5px 6px;
+  color: #000;
 }

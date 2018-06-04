@@ -1,0 +1,74 @@
+.parallax {
+  background-image: url(/imgs/benmodel4.jpg);
+  height: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: -70px;
+}
+
+span.burgerWrap, span.exWrap,
+a.burger, a.ex {display: none;}
+div.arena + .fixed-nav{
+  padding-top: 60px;
+}
+div.navigation {
+  margin: 0;
+  padding: 0;
+  background-color: #eee;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  line-height: 4em;
+  width: 100%;
+
+}
+#nav-list > .list-items {
+  float: left;
+  height: 100%;
+  display: block;
+  text-align: center;
+  padding: 0 14px;
+  text-decoration: none;
+}
+div.hiDiv {
+  color: #fff;
+  font-size: 24px;
+  position: absolute;
+  top: 0;
+  margin-top: 125px;
+  background-color: #111;
+  text-align: center;
+  padding: 0 25px;
+  width: 421px;
+  transition: 0.5s;
+}
+.hideThis {
+  display: none;
+}
+div.sections, div.sectionss {padding: 5px 0;}
+
+.fixed-nav div.navigation{
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+}
+.fixed-nav {
+  padding-top: 60px;
+}
+.active-nav, .list-items:hover {
+  background-color: #000;
+  color: #fff;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.25);
+}
+div.logoArea {
+  position: fixed;
+  top: 0;
+  z-index: 1001;
+}
+a.homecircle > img {
+  float: left;
+  width: 65px;
+}

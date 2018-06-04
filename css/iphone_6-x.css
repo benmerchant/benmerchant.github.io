@@ -1,4 +1,30 @@
+div.navigation {
+  background-color: rgba(245, 136, 33, 1.0);
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 0;
+  z-index: 50;
+  overflow: hidden;
+  transition: 0.5s;
+  font-size: 1.5rem;
+}
+div.logoArea {
+  line-height: 3em;
+  position: fixed;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  z-index: 1001;
+}
+a.homecircle > img {
+  float: left;
+  width: 65px;
 
+}
 
 span.burgerWrap, span.exWrap{
   margin-right: 20px;
@@ -33,28 +59,13 @@ div.navigation a.list-items {
 div.sections, div.sectionss {
  padding: 5px 0;
 }
-h2.headers, h2.copyThis{
-  text-align: center;
-  margin-bottom: 0;
-}
-a.gitGud {
-  color: #fff;
-  text-decoration: none;
-  padding: 0 10px;
-}
+
+
 div#main-arena {
   transition: 0.5s;
 }
-#footer-div {
-  padding: 5px 0;
-  background-color: #000;
-  color: lightgrey;
-}
-a.topUp {
-  background-color: #fff;
-  padding: 5px 6px;
-  color: #000;
-}
+
+
 
 
 .hideThis {
@@ -63,11 +74,7 @@ a.topUp {
 p#hiSolo {
   float: right;
 }
-div.sectFoot {
-  display: flex;
-  justify-content: flex-end;
-  padding-right: 15px;
-}
+
 @media screen and (orientation: portrait) {
   .parallax {
     background-image: url(/imgs/benmodel3.jpg);
@@ -90,21 +97,7 @@ div.sectFoot {
     width: 314px;
     transition: 0.5s;
   }
-  div.navigation {
-    background-color: rgba(245, 136, 33, 1.0);
-    position: fixed;
-    top: 0;
-    right: 0;
-    height: 100%;
-    width: 0;
-    padding-top: 175px;
-    /* padding-left: 25px; */
-    z-index: 50;
-    overflow: hidden;
-    transition: 0.5s;
-    font-size: 1.5rem;
-
-  }
+  div.navigation {padding-top: 175px;}
 }
 @media screen and (orientation: landscape) {
   .parallax {
@@ -128,18 +121,5 @@ div.sectFoot {
     width: 314px;
     transition: 0.5s;
   }
-  div.navigation {
-    background-color: rgba(245, 136, 33, 1.0);
-    position: fixed;
-    top: 0;
-    right: 0;
-    height: 100%;
-    width: 0;
-    padding-top: 75px;
-    /* padding-left: 25px; */
-    z-index: 50;
-    overflow: hidden;
-    transition: 0.5s;
-    font-size: 1.5rem;
-  }
+  div.navigation {padding-top: 75px;}
 }
