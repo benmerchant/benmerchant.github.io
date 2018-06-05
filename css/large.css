@@ -60,7 +60,7 @@ div.hiDiv {
 .hideThis {
   display: none;
 }
-div.sections, div.sectionss {padding: 5px 0;}
+
 
 .fixed-nav div.navigation{
   position: fixed;
@@ -85,4 +85,8 @@ a.homecircle > img {
   width: 75px;
 }
 
-div.showcase {width:39%;}
+div.showcase {
+  width:39%;
+  margin: 19px;
+}
+div.showText{padding: 20px;}

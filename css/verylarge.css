@@ -48,7 +48,7 @@ div.hiDiv {
 .hideThis {
   display: none;
 }
-div.sections, div.sectionss {padding: 5px 0;}
+
 
 .fixed-nav div.navigation{
   position: fixed;
@@ -72,4 +72,14 @@ a.homecircle > img {
   float: left;
   width: 75px;
 }
-div.showcase {width:25%;}
+div.showcase {
+  width:25%;
+  margin: 19px;
+}
+div.showText{padding: 20px;}
+
+img#model2 {
+  margin-top: -212px;
+  margin-bottom: -55px;
+  clip-path: inset(212px 0px 55px 0px);
+}
