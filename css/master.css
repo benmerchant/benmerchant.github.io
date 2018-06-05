@@ -12,7 +12,7 @@ div.sections {
   justify-content: center;
   flex-wrap: wrap;
 }
-div.sections, div.sectionss {padding: 5px 0 19px;}
+
 h2.headers{
   width: 100%;
   display: block;

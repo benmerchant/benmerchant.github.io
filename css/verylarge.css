@@ -16,22 +16,24 @@ div.arena + .fixed-nav{
 div.navigation {
   margin: 0;
   padding: 0;
-  background-color: #eee;
+  background-color: #000;
   overflow: hidden;
   display: flex;
   justify-content: center;
   width: 100%;
-  line-height: 4em;
+  line-height: 80px;
   width: 100%;
 
 }
 #nav-list > .list-items {
-
+  background-color: #fff;
   height: 100%;
   display: block;
   text-align: center;
   padding: 0 14px;
   text-decoration: none;
+  margin: 0 27px;
+  width: 90px;
 }
 div.hiDiv {
   color: #fff;
@@ -49,7 +51,8 @@ div.hiDiv {
   display: none;
 }
 
-
+div.sections, div.sectionss {padding: 88px 0 60px;}
+h2.headers{margin: 0;}
 .fixed-nav div.navigation{
   position: fixed;
   top: 0;
@@ -59,9 +62,9 @@ div.hiDiv {
   padding-top: 60px;
 }
 .active-nav, .list-items:hover {
-  background-color: #000;
-  color: #fff;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.25);
+  background-color: red;
+  color: #000;
+  /* box-shadow: 0 1px 3px rgba(0,0,0,0.25); */
 }
 div.logoArea {
   position: fixed;
