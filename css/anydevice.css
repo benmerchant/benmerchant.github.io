@@ -1,39 +1,14 @@
-html, body {
-  height: 100%;
-  margin: 0;
-  font-family: 'Lato', sans-serif;
-}
 
-#about-div {
-  background-color: #a8a8a8;
-}
-#portfolio-div {
-  background-color: #848484;
-}
-#blog-div {
-  background-color: #707070;
-}
-#skills-div {
-  background-color: #515050;
-}
-#contact-div {
-  background-color: #383636;
-}
 
-#footer-div {
-  padding: 5px 0;
-  background-color: #000;
-  color: lightgrey;
-}
 
 h2.headers, h2.copyThis{
   text-align: center;
   margin-bottom: 0;
 }
-span.sectFoot {
+/* span.sectFoot {
   height: 26px;
   width: 26px;
-}
+} */
 a.topUp {
   background-color: #fff;
   padding: 5px 6px;
