@@ -1,5 +1,5 @@
 .parallax {
-  background-image: url(/imgs/benmodel4.jpg);
+  background-image: url(/imgs/benmodel1.jpg);
   height: 100%;
   background-attachment: fixed;
   background-position: center;
@@ -7,7 +7,18 @@
   background-size: cover;
   margin-bottom: -70px;
 }
+div.navigation {
+  margin: 0;
+  padding: 0;
+  background-color: #eee;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  line-height: 4em;
+  width: 100%;
 
+}
 span.burgerWrap, span.exWrap,
 a.burger, a.ex {display: none;}
 div.arena + .fixed-nav{
@@ -37,8 +48,9 @@ div.hiDiv {
   color: #fff;
   font-size: 32px;
   position: absolute;
+  right: 0;
   top: 0;
-  margin-top: 150px;
+  margin-top: 510px;
   background-color: #111;
   text-align: center;
   padding: 0 25px;

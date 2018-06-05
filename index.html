@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="/css/anydevice.css">
     <link rel="stylesheet" href="/css/master.css">
-    <link media="screen and (min-width: 375px) and (max-width: 812px)" rel="stylesheet" href="/css/iphone_6-x.css">
+    <link media="screen and (min-width: 375px) and (max-width: 823px)" rel="stylesheet" href="/css/iphone.css">
+    <link media="screen and (min-width: 824px) and (max-width: 1199px)" rel="stylesheet" href="/css/large.css">
     <link media="screen and (min-width: 1200px)" rel="stylesheet" href="/css/verylarge.css">
     <link rel="icon" type="image/x-icon" href="/imgs/favicon.ico">
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
@@ -16,8 +17,8 @@
     <div id="top"></div>
     <div class="parallax"></div>
     <div class="logoArea" id="header">
-      <a onclick="slideOut()" class="homecircle" href="#top"><img src="imgs/logo.png" alt="Home" title="Home"></a>
-      <span class="burgerWrap"  onclick="slideIn()">
+      <a class="homecircle closers" href="#top"><img src="imgs/logo.png" alt="Home" title="Home"></a>
+      <span class="burgerWrap" id="burgerWrapper">
         <a href="javascript:void(0);" class="burger">
           <span class="fa fa-bars"></span>
         </a>
@@ -25,21 +26,21 @@
     </div>
     <div class="arena" id="main-arena">
       <div class="navigation" id="nav-list">
-        <span class="exWrap" onclick="slideOut()">
+        <span class="exWrap closers">
           <a href="javascript:void(0);" class="ex">
             <span class="fa fa-times"></span>
           </a>
         </span>
-        <a class="list-items active-nav" href="#about-div" onclick="slideOut()">ABOUT</a>
-        <a class="list-items" href="#portfolio-div" onclick="slideOut()">PORTFOLIO</a>
-        <a class="list-items" href="#blog-div" onclick="slideOut()">BLOG</a>
-        <a class="list-items" href="#skills-div" onclick="slideOut()">SKILLS</a>
-        <a class="list-items" href="#contact-div" onclick="slideOut()">CONTACT</a>
+        <a class="list-items active-nav closers" href="#about-div">ABOUT</a>
+        <a class="list-items closers" href="#portfolio-div">PORTFOLIO</a>
+        <a class="list-items closers" href="#blog-div">BLOG</a>
+        <a class="list-items closers" href="#skills-div">SKILLS</a>
+        <a class="list-items closers" href="#contact-div">CONTACT</a>
 
       </div>
       <div class="hiDiv">
         <p class="" id="hiCopy">Hi, my name is Ben Merchant.<br> I'm a full-stack web developer.</p>
-        <p class="hideThis" id="hiSolo" onclick="slideOut()">Hi!</p>
+        <p class="hideThis closers" id="hiSolo">Hi!</p>
       </div>
 
       <div class="sections" id="about-div">
@@ -57,7 +58,7 @@
           <span class="gazzText">Me at The Force Awakens Premiere</span>
         </div>
         <div class="sectFoot">
-          <a href="#top"class="topUp" onclick="slideOut()">
+          <a href="#top"class="topUp closers">
             <i class="fa fa-chevron-up"></i>
           </a>
         </div>
@@ -67,7 +68,7 @@
       <div class="sectionss" id="portfolio-div">
         <h2 class="headers">- portfolio -</h2>
         <div class="sectFoot">
-          <a href="#top" class="topUp" onclick="slideOut()">
+          <a href="#top" class="topUp closers">
             <i class="fa fa-chevron-up"></i>
           </a>
         </div>
@@ -76,7 +77,7 @@
       <div class="sectionss" id="blog-div">
         <h2 class="headers">- blog -</h2>
         <div class="sectFoot">
-          <a href="#top" class="topUp" onclick="slideOut()">
+          <a href="#top" class="topUp closers">
             <i class="fa fa-chevron-up"></i>
           </a>
         </div>
@@ -84,7 +85,7 @@
       <div class="sectionss" id="skills-div">
         <h2 class="headers">- skills -</h2>
         <div class="sectFoot">
-          <a href="#top" class="topUp" onclick="slideOut()">
+          <a href="#top" class="topUp closers">
             <i class="fa fa-chevron-up"></i>
           </a>
         </div>
@@ -93,7 +94,7 @@
         <h2 class="headers">- contact -</h2>
 
         <div class="sectFoot">
-          <a href="#top" class="topUp" onclick="slideOut()">
+          <a href="#top" class="topUp closers">
             <i class="fa fa-chevron-up"></i>
           </a>
         </div>
@@ -105,7 +106,7 @@
           <a target="_blank" class="gitGud" href="https://open.spotify.com/user/dragoncatshouse"><i class="fab fa-spotify"></i></a>
         </div>
         <div class="sectFoot">
-          <a href="#top" class="topUp" onclick="slideOut()">
+          <a href="#top" class="topUp closers">
             <i class="fa fa-chevron-up"></i>
           </a>
         </div>
@@ -113,7 +114,8 @@
     </div> <!-- #end main-arena -->
     <!-- <script src="js/jquery-3.3.1.min.js" type="text/javascript"></script> -->
     <!-- <script src="js/jqs.js" type="text/javascript"></script> -->
-    <script src="js/mobile.js" type="text/javascript"></script>
-    <!-- <script src="js/portscript.js" type="text/javascript"></script> -->
+    <!-- <script src="js/mobile.js" type="text/javascript"></script> -->
+    <!-- <script src="js/verylarge.js" type="text/javascript"></script> -->
+    <script src="js/allscreens.js" type="text/javascript"></script>
   </body>
 </html>

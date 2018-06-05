@@ -5,7 +5,7 @@ div.navigation {
   right: 0;
   height: 100%;
   width: 0;
-  z-index: 50;
+  z-index: 150;
   overflow: hidden;
   transition: 0.5s;
   font-size: 1.5rem;
@@ -18,7 +18,7 @@ div.logoArea {
   align-items: center;
   justify-content: space-between;
   width: 100%;
-
+  z-index: 100;
 }
 a.homecircle > img {
   float: left;
