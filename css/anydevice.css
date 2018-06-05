@@ -25,19 +25,14 @@ html, body {
   background-color: #000;
   color: lightgrey;
 }
-a.gitGud {
-  color: #fff;
-  text-decoration: none;
-  padding: 0 10px;
-}
+
 h2.headers, h2.copyThis{
   text-align: center;
   margin-bottom: 0;
 }
-div.sectFoot {
-  display: flex;
-  justify-content: flex-end;
-  padding-right: 15px;
+span.sectFoot {
+  height: 26px;
+  width: 26px;
 }
 a.topUp {
   background-color: #fff;

@@ -1,28 +1,26 @@
-
-
-
-
-
 div.sectionss {
   height: 550px;
 }
-
-div.photoFrame {
-  width: 100%;
+div.sections {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
 }
-a.anchorGazz {
-  width: 75%;
+h3.headers{
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: 100%;
+  position: relative;
 }
-img.aboutPhoto {
-  border-radius: 50%;
-  width: 100%;
-}
-div.textFrame {
-  padding: 25px;
+div.textFrame{
   text-align: center;
+  position: relative;
+}
+/* social font awesome icons */
+a.gitGud {
+  color: #fff;
+  text-decoration: none;
+  padding: 0 10px;
 }
 div.linkers {
   width: 100%;
@@ -31,3 +29,18 @@ div.linkers {
   justify-content: center;
   font-size: xx-large;
 }
+/* #end social font awesome icon styles */
+
+/* show case card styles */
+div.showcase {
+  border-radius: 5px;
+  background-color: #fff;
+  text-align: center;
+  position: relative;
+}
+div.showcase a {color: #000;}
+img.showPic{
+  width: 100%;
+  border-radius: 5px 5px 0 0;
+}
+/* end show case card styles */

@@ -56,24 +56,23 @@ div.navigation a.list-items {
   color: #000;
 }
 
-div.sections, div.sectionss {
- padding: 5px 0;
+div.sections, div.sectionss {padding: 5px 0 50px;}
+div#main-arena {transition: 0.5s;}
+.hideThis{display: none;}
+p#hiSolo{float: right;}
+
+div.showcase {width: 75%;}
+
+
+div.showText{padding: 20px;}
+
+div.textFrame{
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: 100%;
+  padding: 0 10%;
 }
 
-
-div#main-arena {
-  transition: 0.5s;
-}
-
-
-
-
-.hideThis {
-  display: none;
-}
-p#hiSolo {
-  float: right;
-}
 
 @media screen and (orientation: portrait) {
   .parallax {
