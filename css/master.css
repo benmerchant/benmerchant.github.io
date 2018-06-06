@@ -91,6 +91,12 @@ a.topUp {
 
 div.faIcons{
   font-size: x-large;
+  display: flex;
+  justify-content: center;
+  padding-top: 9px;
+}
+.faIconic {
+  margin: 0 3px;
 }
 div.madeIn{
   width: 100%;
