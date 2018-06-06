@@ -27,7 +27,7 @@ div.arena + .fixed-nav{
 div.navigation {
   margin: 0;
   padding: 0;
-  background-color: #eee;
+  background-color: #000;
   overflow: hidden;
   display: flex;
   justify-content: flex-end;
@@ -44,6 +44,13 @@ div.navigation {
   padding: 0 14px;
   text-decoration: none;
   width: 90px;
+
+  color: #fff;
+}
+.active-nav, .list-items:hover {
+  background-color: #4f4f4f;
+  /* color: #fff;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.25); */
 }
 div.hiDiv {
   color: #fff;
@@ -61,7 +68,7 @@ div.hiDiv {
 .hideThis {
   display: none;
 }
-div.sections, div.sectionss {padding: 5px 0 19px;}
+div.sections, div.sectionss {padding: 88px 0 60px;}
 
 .fixed-nav div.navigation{
   position: fixed;
@@ -71,11 +78,7 @@ div.sections, div.sectionss {padding: 5px 0 19px;}
 .fixed-nav {
   padding-top: 60px;
 }
-.active-nav, .list-items:hover {
-  background-color: #000;
-  color: #fff;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.25);
-}
+
 div.logoArea {
   position: fixed;
   top: 0;

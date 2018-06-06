@@ -25,15 +25,21 @@ div.navigation {
   width: 100%;
 
 }
-#nav-list > .list-items {
-  background-color: #fff;
+#nav-list .list-items {
+  /* background-color: #fff; */
   height: 100%;
   display: block;
   text-align: center;
   padding: 0 14px;
   text-decoration: none;
-  margin: 0 27px;
+  /* margin: 0 27px; */
   width: 90px;
+  color: #fff;
+}
+.active-nav, .list-items:hover {
+  background-color: #4f4f4f;
+  /* color: #000; */
+  /* box-shadow: 0 1px 3px rgba(0,0,0,0.25); */
 }
 div.hiDiv {
   color: #fff;
@@ -61,11 +67,7 @@ h2.headers{margin: 0;}
 .fixed-nav {
   padding-top: 60px;
 }
-.active-nav, .list-items:hover {
-  background-color: red;
-  color: #000;
-  /* box-shadow: 0 1px 3px rgba(0,0,0,0.25); */
-}
+
 div.logoArea {
   position: fixed;
   top: 0;
