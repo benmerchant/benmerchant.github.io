@@ -76,6 +76,10 @@ div.textFrame{
   padding: 0 10%;
 }
 
+div.formDiv {
+  margin-bottom: 27px;
+}
+
 
 @media screen and (orientation: portrait) {
   .parallax {
