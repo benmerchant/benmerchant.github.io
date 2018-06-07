@@ -69,6 +69,8 @@ div.linkers {
   flex-wrap: wrap;
   /* position: absolute;
   bottom: 0; */
+  font-family: 'Lato', sans-serif;
+  font-size: xx-large;
 }
 a.topUp {
   background-color: #fff;
