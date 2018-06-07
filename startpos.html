@@ -39,15 +39,19 @@
           This is a POSaaS, Point of Sale as a Service. POSs are typically sold
           as a one time purchase and you often have to call for service if something
           goes wrong. A restaurant owner will usually have to purchase a computer
-          from the POS provider. I plan for this to be usable on any device. 
+          from the POS provider. I plan for this to be usable on any device.
         </p>
       </div>
       <div class="flexMaxWidth">
         <h3>What is it made of?</h3>
         <p>
           The backend is a Node.js API implementing Express.js. The data is stored
-          on a MongoDB server. The front-end utilizes AngularJS. <br>
-          Both the front and back ends are hosted on AWS.
+          on a MongoDB server. The front-end utilizes AngularJS. The front and back
+          ends are hosted independently on AWS. The API is tested with Mocha.
+          <br><br>
+          I am developing in the browswer first. It's simple to test the API
+          this way. Once the endpoints are fully tested the next step will be to
+          develop the iOS and Android apps.
         </p>
       </div>
       <div class="flexMaxWidth">
@@ -56,13 +60,31 @@
           What you see so far was created in four months time (one semester).
           Most of that time was spent learning the frameworks, which was the goal
           of the project, to learn. It did earn me an A for the course.
+          <br><br>
+          Initially the front and back ends were together in Express.js using
+          Handlebars for the front end. Once I started to get into AngularJS I
+          realized I needed to bifurcate the two into separate entities. This required
+          starting over from line 1.
+        </p>
+      </div>
+      <div class="flexMaxWidth">
+        <h3>What makes it different?</h3>
+        <p>
+          Start POS completely encompassses all the needs of a restaurant, including
+          employee scheduling, time-clock tracking, and management-employee communication.
+          <br><br>
+          I know what works in restaurants. More importantly, I know the pain points.
+          Every server complains about the POS of their store. There are some great
+          ones out there. There are also some really bad ones. But they all have
+          something that they are good at. 
         </p>
       </div>
       <div class="flexMaxWidth">
         <h3>What's next?</h3>
         <p>
           Over the next few months the app will be fully-fleshed out. The goal
-          is to get it into a restaurant within a year.
+          is to get it into a restaurant within a year. In that time I will have
+          to learn Android and iOS development.
         </p>
       </div>
 
