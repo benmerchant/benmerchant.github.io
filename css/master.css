@@ -115,3 +115,22 @@ div.madeIn{
 #lastTopUp {
   transform: scale(2);
 }
+.flexMaxWidth {width:100%; display: block;}
+.text-center {text-align: center;}
+.buttonLinker {
+  text-decoration: none;
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 7px;
+  padding: 7px 11px;
+  font-size: large;
+}
+.button-basic {
+  border-color: #000;
+  color: #000;
+}
+.button-white {
+  border-color: #fff;
+  color: #fff;
+  background-color: #000;
+}
