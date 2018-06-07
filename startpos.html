@@ -3,21 +3,85 @@
   <head>
     <meta charset="utf-8">
     <title>Start POS</title>
-    <style media="screen">
-      body{background-color: black; color: white;}
-      a{color:white;}
-    </style>
+    <link href="https://fonts.googleapis.com/css?family=Hind" rel="stylesheet">
+    <link rel="stylesheet" href="/css/startpos.css">
+    <link rel="icon" type="image/x-icon" href="/imgs/favicon.ico">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
   </head>
   <body>
-    <h1>Start Pos</h1>
+    <div class="logoArea" id="header">
+      <a class="homecircle closers" href="https://benmerchant.github.io"><img src="imgs/logo.png" alt="Home" title="Home"></a>
+      <!-- <span class="burgerWrap" id="burgerWrapper">
+        <a href="javascript:void(0);" class="burger">
+          <span class="fa fa-bars"></span>
+        </a>
+      </span> -->
+      <h1>Start POS</h1>
+      <div class="invisible"></div>
+    </div>
+    <div class="main padd">
+      <div class="flexMaxWidth visitSite">
+        <a href="http://startpos.management" target="_blank">
+          <img class="mainImg" src="/imgs/startpos_logo.png" title="Visit the site here">
+        </a>
+      </div>
+      <div class="flexMaxWidth text-center">
+        FAQ (updated: June 6, 2018)
+      </div>
+      <div class="flexMaxWidth">
+        <h3>What is it?</h3>
+        <p>
+          Start POS is my capstone project from college. It is the realization
+          of a long-time desire to design the perfect Point of Sale (POS) system for
+          a restaurant. This is meant to be an all-in-one content management system
+          as well as a POS. Including the menu and employee management.
+          <br><br>
+          This is a POSaaS, Point of Sale as a Service. POSs are typically sold
+          as a one time purchase and you often have to call for service if something
+          goes wrong. A restaurant owner will usually have to purchase a computer
+          from the POS provider. I plan for this to be usable on any device. 
+        </p>
+      </div>
+      <div class="flexMaxWidth">
+        <h3>What is it made of?</h3>
+        <p>
+          The backend is a Node.js API implementing Express.js. The data is stored
+          on a MongoDB server. The front-end utilizes AngularJS. <br>
+          Both the front and back ends are hosted on AWS.
+        </p>
+      </div>
+      <div class="flexMaxWidth">
+        <h3>Why isn't there much to it?</h3>
+        <p>
+          What you see so far was created in four months time (one semester).
+          Most of that time was spent learning the frameworks, which was the goal
+          of the project, to learn. It did earn me an A for the course.
+        </p>
+      </div>
+      <div class="flexMaxWidth">
+        <h3>What's next?</h3>
+        <p>
+          Over the next few months the app will be fully-fleshed out. The goal
+          is to get it into a restaurant within a year.
+        </p>
+      </div>
 
-    <h1>
-      Check it out: <a href="http://startpos.management" target="_blank">http://startpos.management</a>
-    </h1>
-     <br>
+    </div> <!-- #end main -->
+    <div class="flexMaxWidth" id="footer-div">
+      <a href="#top" class="topUp" id="lastTopUp">
+        <i class="fa fa-chevron-up"></i>
+      </a>
+      <div class="linkers">
+        <a target="_blank" class="gitGud" href="http://github.com/benmerchant"><i class="fab fa-github"></i></a>
+        <a target="_blank" class="gitGud" href="https://open.spotify.com/user/dragoncatshouse"><i class="fab fa-spotify"></i></a>
+        <a target="_blank" class="gitGud" href="https://medium.com/@benmerchant"><i class="fab fa-medium-m"></i></a>
+      </div>
+      <h2 class="copyThis flexMaxWidth text-center">&copy; 2018 Ben Merchant</h2>
+      <div class="madeIn flexMaxWidth text-center">
+        Made from scratch in West by-God Virginia
+      </div>
 
-     <h2>
-       <a href="http://benmerchant.github.io">Back to Homepage</a>
-     </h2>
+    </div> <!-- #end footer-div -->
+
   </body>
 </html>

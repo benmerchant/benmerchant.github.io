@@ -1,0 +1,77 @@
+html {font-family: 'Hind', sans-serif;}
+html,body {
+  height: 100%;
+  margin: 0;
+}
+body{
+  background-color: #eee;
+
+}
+div.logoArea {
+  position: fixed;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content:space-between;
+  width: 100%;
+  z-index: 100;
+  background-color: #fff;
+}
+
+a.homecircle > img, div.invisible {width: 88px;}
+div.main {
+  padding-top: 100px;
+  background-color: #fff;
+  margin-left: 12%;
+  margin-right: 12%;
+  /* height: 100%; */
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+@media screen and (max-width: 768px) {
+  div.main {margin: 0;}
+}
+a{
+  color:#fff;
+}
+.flexMaxWidth {
+  display: block;
+  width: 100%;
+}
+.text-center {text-align: center;}
+.justify-between {justify-content: space-between;}
+.padd {padding:0 25px;}
+/* social font awesome icons */
+a.gitGud {
+  color: #fff;
+  text-decoration: none;
+  padding: 0 10px;
+}
+div.linkers {
+  width: 100%;
+  display: flex;
+  padding-top: 25px;
+  justify-content: center;
+  font-size: xx-large;
+}
+#footer-div {
+  padding: 5px 0;
+  background-color: #000;
+  color: lightgrey;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  /* position: absolute;
+  bottom: 0; */
+}
+a.topUp {
+  background-color: #fff;
+  padding: 5px 6px;
+  color: #000;
+}
+#lastTopUp {
+  transform: scale(2);
+}
+img.mainImg {width: 100%;}
