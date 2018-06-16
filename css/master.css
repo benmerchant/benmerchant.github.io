@@ -3,6 +3,19 @@ html, body {
   margin: 0;
   font-family: 'Lato', sans-serif;
 }
+h2.headers, h2.copyThis{
+  text-align: center;
+  margin-bottom: 0;
+}
+/* span.sectFoot {
+  height: 26px;
+  width: 26px;
+} */
+a.topUp, #lastTopUp {
+  background-color: #fff;
+  padding: 5px 6px;
+  color: #000;
+}
 
 div.sectionss {
   height: 550px;
@@ -134,3 +147,69 @@ div.madeIn{
   color: #fff;
   background-color: #000;
 }
+
+div.skillBox {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+table.skillTable{
+  /* border-style: solid;  */
+  /* border-width: 1px; */
+  /* border-color: #1d3316; */
+  border-collapse: collapse;
+  /* border-radius: 20px; */
+  width: 85%;
+}
+
+.skillHeader {
+  /* border: 1px solid #1d3316;
+  border-collapse: inherit; */
+  padding: 10px 0;
+  color: #fff;
+}
+td.skillCell{
+  padding: 5px 10px 5px 10px;
+  width: 98px;
+  border-right: 2px solid #1d3316;
+  text-align: right;
+  color: #fff;
+}
+
+.light-green {background-color: #b8ffa3;}
+.medium-green {background-color: #3d722d;}
+.dark-green {background-color: #1d3316;}
+
+.intermediate{width: 50%; display: block;}
+.skilled{width: 40%; display: block;}
+.talented{width: 33%; display: block;}
+.beginner{width: 25%; display: block;}
+.rookie{width: 15%; display: block;}
+
+span.full-bar{
+  margin: 5px 10px 5px 10px;
+  border: 2px solid #3d722d;
+  border-radius: 12px;
+  height: 24px;
+  display: block;
+}
+
+span.skill-bars{
+  height: 24px;
+  border-radius: 10px;
+  padding: 2px 0 0 4px;
+  color: #fff;
+}
+td.future{
+  text-align: center;
+  color: #fff;
+  padding: 9px 0;
+}
+.last-row{
+  border-radius: 0 0 20px 20px;
+}
+.first-row{
+  border-radius: 20px 20px 0 0;
+}
+tbody.skillBody{border-radius: 20px;}
