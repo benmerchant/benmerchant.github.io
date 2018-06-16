@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="hanger.css">
+    <title>Presidential Hangman</title>
+
+
+</HEAD>
+
+<body>
+
+    <div class="table-container">
+        <table border=8 bgcolor="#ccffff" cellspacing=5>
+            <tr>
+                <td>
+
+                    <h2>Hangman!</h2><br>
+                    <h3>Topic:<!-- red font --> <!-- bold -->
+                        Presidents of The United States</h3> <!-- bold -->
+                    <br>
+                    This game is similar to Hangman.  See if you can name the U.S. President by clicking on the letters below.<p>
+                    <br>
+                    You only get 7 tries.
+                    (head, body, arms, legs, face)
+                    <hr><br>
+                    <span id="letters">
+                        <!-- clickable letters go here -->
+                    </span>
+                    <span id="output">
+                        <!-- game "board" spaces go here -->
+
+                    </span>
+                    <span id="attempt"></span>
+
+
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <p>Find the original online <a href="http://www.tammyyee.com/keiki_page/javascript_games/pres.html">here</a>.
+
+    <script src="jquery-3.1.1.min.js"></script>
+    <script src="hangman.js"></script>
+</body>
+</html>

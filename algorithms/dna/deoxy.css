@@ -1,0 +1,26 @@
+/* By Ben Merchant - Jan 19, 2017*/
+
+.infoText{
+	width: 311px;
+	border: 1px solid black;
+	padding: 4px;
+}
+
+textarea{
+	resize: none;
+	margin-bottom: 10px;
+}
+
+button{
+	margin-bottom: 15px;
+}
+
+hr{
+	color: #000;
+	background-color: #F00;
+	width: 350px;
+	height: 2px;
+	text-align: left;
+	margin: 10px auto 10px 0;
+	border: none;	
+}

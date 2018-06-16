@@ -1,0 +1,68 @@
+00:07:16+ Austin-2 (800cd220@gateway/web/freenode/ip.128.12.210.32)
+00:23:28 <Austin-2> Hey, anyone home?
+02:47:31- Austin-2 (QUIT: Ping timeout: 245 seconds) (800cd220@gateway/web/freenode/ip.128.12.210.32)
+08:04:46- rvnd (QUIT: Quit: Computer has gone to sleep.) (~rvnd@173.252.71.3)
+08:40:52+ rvnd (~rvnd@173.252.71.3)
+11:43:16+ test_ (ab426ab4@gateway/web/freenode/ip.171.66.106.180)
+11:43:26- test_ (QUIT: Client Quit) (ab426ab4@gateway/web/freenode/ip.171.66.106.180)
+11:43:47+ Austin-2 (ab426ab4@gateway/web/freenode/ip.171.66.106.180)
+11:43:53 <Austin-2> Hi, anyone online?
+11:44:05 <ongardie> Austin-2: hey
+11:44:31 <Austin-2> From the readme, if I can do ./obj.master/client
+11:44:38 <Austin-2> should I be able to do: g++ -Lobj.master -lramcloud -Isrc -Iobj.master -o TestClient src/RamCloud.cc
+11:50:33 <Austin-2>  
+11:59:11- Austin-2 (QUIT: Ping timeout: 245 seconds) (ab426ab4@gateway/web/freenode/ip.171.66.106.180)
+12:00:20+ Austin-2 (ab426ab4@gateway/web/freenode/ip.171.66.106.180)
+12:10:51- Austin-2 (QUIT: Ping timeout: 245 seconds) (ab426ab4@gateway/web/freenode/ip.171.66.106.180)
+12:16:11+ Austin-2 (ab42489a@gateway/web/freenode/ip.171.66.72.154)
+12:16:51 <Austin-2> Hi, sorry, I think this irc client is broken
+12:16:58 <Austin-2> If I can do this from the readme: ./obj.master/client
+12:17:28 <Austin-2> should I be able to do: g++ -Lobj.master -lramcloud -Isrc -Iobj.master -o TestClient src/RamCloud.cc
+12:32:14- rvnd (QUIT: Ping timeout: 245 seconds) (~rvnd@173.252.71.3)
+12:34:53+ rvnd (~rvnd@173.252.71.3)
+13:10:19 <Austin-2>  
+13:26:30- rvnd (QUIT: Ping timeout: 248 seconds) (~rvnd@173.252.71.3)
+13:46:16- Austin-2 (QUIT: Ping timeout: 245 seconds) (ab42489a@gateway/web/freenode/ip.171.66.72.154)
+14:44:08+ Austin-2 (ab42ad9b@gateway/web/freenode/ip.171.66.173.155)
+14:44:21 <Austin-2> Hi! Anyone available for questions?
+14:52:44 <ongardie> Austin-2: sorry, i'm not getting notifications for some reason
+14:53:43 <ongardie> Austin-2:  i don't think RamCloud.cc has a main function. you should be able to just type 'make' to build that binary
+14:55:23 <Austin-2> I see, thanks
+14:55:58 <Austin-2> and you would recommend it as a building block for running a hello world application?
+14:57:27 <ongardie> Austin-2: yeah, obj.master/client is a pretty simple example program, i think
+14:57:35 <Austin-2> thanks
+14:58:11 <ongardie> Austin-2: the source for that is src/ClientMain.cc, btw
+14:59:12 <ongardie> i'll be back in half an hour
+15:21:14 <ongardie> back
+15:26:49 <Austin-2> What do you use to test the quality of your system? Do you only compare yourself against machines running the same size data? Do you look at speed, power, programmability? Cost of hardware?
+15:30:41 <ongardie> Austin-2: can we take those one at a time?
+15:31:28 <ongardie> Austin-2: quality: we do unit tests, some code reviews, a lot of benchmarking, and some (not enough) functional tests
+15:32:09 <ongardie> or perhaps you mean to compare and contrast RAMCloud with other systems
+15:32:17 <Austin-2> yes
+15:32:21 <ongardie> i see
+15:32:34 <ongardie> our "killer feature" is low latency access
+15:33:09 <ongardie> our data model is quite basic right now: pretty much just get, set, and delete, so we're not really competing on that front yet
+15:34:14 <ongardie> regarding cost of hardware, we think we provide the cheapest choice when you need the most I/O operations per second. of course for many less intensive workloads, flash and disk-based approaches will be cheaper
+15:35:07 <ongardie> it's hard to compare based on capacity: hopefully you can build a RAMCloud cluster that will hold what you need to access at those speeds
+15:40:20 <Austin-2> So you are not doing any empirical comparisons yet
+15:40:43 <ongardie> Austin-2: no, we haven't
+15:40:53 <Austin-2> thanks.
+15:55:26- Austin-2 (QUIT: Ping timeout: 245 seconds) (ab42ad9b@gateway/web/freenode/ip.171.66.173.155)
+16:06:15+ Austin-2 (ab42ad9b@gateway/web/freenode/ip.171.66.173.155)
+16:07:17 <Austin-2> Is this the best documentation of the functionality available in RamCloud? https://ramcloud.stanford.edu/docs/epydoc/
+16:07:34 <Austin-2> then clicking on ramcloud.RamCloud class
+16:07:40 <ongardie> no, not at all
+16:07:56 <ongardie> that's for they python bindings, which are fairly undocumented and stale
+16:08:01 <Austin-2> er, by functionality I mean the API calls (to know what all the parameters are and everything)
+16:08:19 <Austin-2> oh I see
+16:08:45 <ongardie> Austin-2: this is probably your best bet: https://ramcloud.stanford.edu/docs/doxygen/classRAMCloud_1_1RamCloud.html
+16:09:02 <Austin-2> cool, thanks
+16:15:59+ ChristianHPI (~Christian@173.164.80.173)
+16:16:13 <ChristianHPI> lock(0..10)
+16:30:01- Austin-2 (QUIT: Ping timeout: 245 seconds) (ab42ad9b@gateway/web/freenode/ip.171.66.173.155)
+16:43:50 <ChristianHPI> unlock(0..10)
+16:44:32- ChristianHPI (QUIT: Remote host closed the connection) (~Christian@173.164.80.173)
+17:16:35+ rvnd (~rvnd@173.252.71.3)
+18:08:31- rvnd (QUIT: Quit: Computer has gone to sleep.) (~rvnd@173.252.71.3)
+
+

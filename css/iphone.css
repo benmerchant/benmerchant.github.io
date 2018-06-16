@@ -69,12 +69,7 @@ div.showcase {
 
 div.showText{padding: 20px;}
 
-div.textFrame{
-  flex-grow: 0;
-  flex-shrink: 1;
-  flex-basis: 100%;
-  padding: 0 10%;
-}
+
 
 div.formDiv {
   margin-bottom: 27px;

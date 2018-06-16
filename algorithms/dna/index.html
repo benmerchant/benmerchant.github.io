@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>DNA Transcription - Algorithms</title>
+	<link rel="stylesheet" type="text/css" href="deoxy.css"/>
+	<!-- By Ben Merchant - Jan 19, 2017-->
+</head>
+<body>
+	<h1>DNA Transcription</h1>
+	Make sure to click all buttons and scroll to the very bottom.
+	
+	
+	<h2>DNA</h2>
+	<textarea id="nucleoDNA" rows="8" cols="39"></textarea><br>
+	<button id="transcribeBTN">Click to Transcribe</button>
+	<div class="infoText">
+		<p>*Note: this box has preloaded data.
+		You may alter the data, but each character 
+		must be one of the four base nucleotide 
+		alphabetic representation.</p>
+	</div>
+	<hr>
+	
+	
+	<h2>RNA</h2>
+	<textarea id="nucleoRNA" rows="8" cols="39"></textarea><br>
+	<button id="codonBTN">Click to Separate Codons</button>
+	<div class="infoText" id="RNAinfo">*This is the RNAinfo.</div>
+	<hr>
+	
+	
+	<h2>RNA: codon-separated</h2>
+	<textarea id="codonRNA" rows="11" cols="39"></textarea><br>
+	<button id="proteinBTN">Click to show Proten Chains</button>
+	<div class="infoText" id="codonInfo">*These are the RNA codons separated by dashes.</div>
+	<hr>
+	
+	
+	<h2>Protein Chains</h2>
+	<textarea id="proteinChains" rows="25" cols="80"></textarea><br>
+	<div class="infoText" id="proteinChainInfo">*These are the chains of amino acids from the 'Start' codon to the 'Stop' codon.</div>
+	<hr>
+	
+	<h2>Protein Frequencies</h2>
+	<textarea id="proteinFrequency" rows="25" cols="39"></textarea><br>
+	<div class="infoText" id="proteinFrequencyInfo">*This is the frequency of each amino acid transcribed and translated in the entire DNA strand.</div>
+	<hr>
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+	
+	<script src="transcribe.js"></script>
+	
+</body>
+</html>

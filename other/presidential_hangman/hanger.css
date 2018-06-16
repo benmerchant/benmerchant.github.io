@@ -1,0 +1,25 @@
+h2, h3{
+    text-align: center;
+}
+
+#output{
+    font-size: 400%;
+}
+
+.table-container{
+    text-align: center;
+    max-width: 500px;
+}
+
+#letters{
+    font-weight: bold;
+    margin: auto;
+
+
+
+}
+
+table{
+    margin: auto;
+}
+

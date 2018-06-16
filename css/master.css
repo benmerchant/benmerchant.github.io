@@ -16,6 +16,12 @@ a.topUp, #lastTopUp {
   padding: 5px 6px;
   color: #000;
 }
+div.textFrame{
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: 100%;
+  padding: 0 10%;
+}
 
 div.sectionss {
   height: 550px;
@@ -78,6 +84,7 @@ img.showPic{
 }
 #skills-div {
   background-color: #e2e2e2;
+  /* background-color: #b8ffa3; */
 }
 #contact-div {
   background-color: #383636;
