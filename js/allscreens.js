@@ -1,21 +1,16 @@
-if(document.documentElement.clientWidth>+824) {
-  // function slideIn(){}
-  // function slideOut(){}
-  // nav active class manip
-  const navBar = document.getElementById('nav-list');
-  const listItems = navBar.getElementsByClassName('list-items');
-  const logoArea = document.getElementById('header');
+// nav active class manip
+const navBar = document.getElementById('nav-list');
+const listItems = navBar.getElementsByClassName('list-items');
+const logoArea = document.getElementById('header');
 
-  for(let ii=0; ii<listItems.length; ii++){
-    listItems[ii].addEventListener('click', function() {
-      const currentItem = document.getElementsByClassName('active-nav');
-      currentItem[0].className = currentItem[0].className.replace(' active-nav', '');
-      this.className += ' active-nav';
-    });
-  }
-  // change active nav on scroll
-
+for(let ii=0; ii<listItems.length; ii++){
+  listItems[ii].addEventListener('click', function() {
+    const currentItem = document.getElementsByClassName('active-nav');
+    currentItem[0].className = currentItem[0].className.replace(' active-nav', '');
+    this.className += ' active-nav';
+  });
 }
+
 var slideItIn = function() {
   document.getElementById('nav-list').style.width = '300px';
   document.getElementById('main-arena').style.marginRight = '300px';
