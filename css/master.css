@@ -161,6 +161,7 @@ table.skillTable{
   border-collapse: collapse;
   /* border-radius: 20px; */
   width: 85%;
+  max-width: 850px;
 }
 
 .skillHeader {
