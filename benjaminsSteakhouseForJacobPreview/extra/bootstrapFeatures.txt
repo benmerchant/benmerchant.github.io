@@ -1,0 +1,40 @@
+Components
+- Navbar
+- Button
+- Card (default border{1px solid rgba0,0,0,0,125} radius 0.25rem)
+- Carousel
+
+Utilities
+- py-3
+- py-5 (every section in index)
+- mb-3
+- text-center (every section in index)
+- bg-white
+- w-100
+- text-white
+- font-weight-bold
+- text-uppercase (index section headings)
+- d-flex flex-row flex-nowrap justify-content-around (menu headings)
+- p-0 m-0 (menu headings)
+- justify-content-center (after setting max width for menu item cards,
+                          they were aligned left, quite unsightly)
+- mx-auto (only works with fixed width items)
+
+
+Typography
+- blockquote
+- come back and use this responsiveness
+---https://getbootstrap.com/docs/4.1/content/typography/#responsive-typography
+
+
+Utilities replaced a lot of the convoluted classes from BS v3.
+"page-header" for one, ..... finish this thought...
+
+
+Had to resize all of the images for the events carousel
+So the div wouldn't change sizes.
+The width is always the same, but the height changes,
+like when using ".card"
+Which just reminded me....
+I need to go back and do it for the cards,
+as right now, I am only using one image for all items

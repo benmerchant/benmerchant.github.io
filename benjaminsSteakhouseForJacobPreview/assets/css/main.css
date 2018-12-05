@@ -1,0 +1,208 @@
+/*
+Course: CSCT 230
+Assignment: Final Project: Bootstrap
+Author: github.com/BenMerchant
+Created: December 3, 2018
+*/
+
+/* Global Styles */
+
+html{background-color: black;} /* testing porpoises only*/
+/* I do this to every new HTML doc I create */
+html { font-size: 1rem;}
+html,body,h1,h2,h3,h4,h5,p {
+  padding: 0;
+  margin: 0;
+}
+a, a:hover{
+  text-decoration: none;
+}
+
+html{
+  position: relative;
+  min-height: 100%;
+}
+body {
+  background-color: lightgrey;
+  height: 100%;
+  width: 100%;
+  margin-bottom: 99px;
+}
+
+/* this is the same element as .container-fluid */
+main#big-box {
+  background-color: grey;
+  /* override BS padding for .container-fluid */
+  padding: 0;
+  /*
+  SOMETHING IS WRONG
+  when I attempt to reduce the container-fluid's padding to 0,
+  everything shifts a bit, but I want my img to touch both sides of screen
+  */
+}
+/* figured it out thanks to chrome dev tools */
+.row {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+
+.bs-gray-dark {
+  background-color: rgba(52,58,64,0.75)
+}
+
+#top {
+  background: url(../img/steak_1.jpg) no-repeat center center;
+  position: relative;
+  height: 100vh; /* learned about viewport height in this course */
+  width: 100%;
+  background-size: cover;
+}
+#reviews {
+  background: url(../img/candle_bar.jpg) no-repeat center center;
+  background-size: cover;
+}
+#events {
+  background: url(../img/wine_tasting.jpg) no-repeat center center;
+  background-size: cover;
+  /* trying to make a blurry image */
+  /*       cCOME BACK TO THIS     */
+}
+#reservations {
+  background: url(../img/contemporary_china_2.png) repeat;
+}
+
+/* This is the small line after each section heading */
+.section-header:after {
+  content: "";
+  display: block;
+  position: relative;
+  height: 4px;
+  width: 150px;
+  background-color: red;
+  margin: 0 auto;
+}
+
+/* increase the font size in the Review Section*/
+.blockquote {
+  font-size: 1.8rem;
+}
+
+ .menu-rule {
+   border-width: 5px;
+   border-color: red;
+ }
+ul#menu-headings{
+  list-style: none;
+}
+ul#menu-headings li{
+  display: inline-block;
+  font-size: 1.25rem;
+  color: white;
+  padding: 1rem;
+  background-color: rgba(0,0,0,0.6);
+  border-radius: 4px;
+}
+ul#menu-headings li:hover{
+  cursor: pointer;
+  /* background-color: rgba(0,0,0,0.75); */
+}
+
+div.card-helper{
+  max-width: 23rem;
+  overflow: hidden;
+}
+
+/* When the page resizes, some elements can get unruly */
+/* we need our own helper classes */
+/* we also need these because */
+/* .mx-auto only works with set width */
+.max-w-400 {
+  max-width: 400px;
+}
+.w-150-static {
+  width: 150px;
+}
+.max-w-100-per {
+  max-width: 100%;
+}
+
+
+
+/* video classes */
+
+.vid-div {
+  /* position: absolute; */
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+
+}
+
+section#video {
+  object-fit: fill;
+  height: auto;
+  max-height: 100%;
+  background-color: rgb(19, 19, 19);
+}
+
+/* alter carousel control icons */
+span.icon-fix {
+  width: 50px;
+  height: 50px;
+  background-color: rgba(0, 0, 0, 0.35);
+}
+.carousel-control-next {
+  bottom: 0;
+}
+.indicator-fix {
+  background-color: rgba(0, 0, 0, 1.0);
+}
+
+/* animate images */
+.zoom{
+  transition: transform .9s;
+}
+.zoom:hover{
+  transform: scale(1.5)
+}
+
+section#blog {
+  /* background-color: rgba(222, 222, 222, 1.0); */
+  background-color: rgba(255, 255, 255, 1.0);
+}
+
+.blogposts a{
+  color: black;
+  transition: all 0.3s ease 0s;
+}
+.blogposts a:hover{
+  color: red;
+}
+.blogposts a h5 {
+  font-weight: bold;
+  font-size: 1.4rem; /* normally 1.25 */
+}
+
+div.img-holder{
+    overflow: hidden;
+}
+.blog-card img {
+  transition: all 0.3s ease 0s;
+  background-color: black;
+}
+
+.blog-card:hover img {
+  transform: scale(1.5) rotate(-15deg);
+}
+.blog-card:hover{
+  cursor: pointer;
+}
+
+/* footer stay at the bottom of the page regardless of how short the content */
+footer.footer {
+  position: absolute;
+  bottom: 0;
+  height: 99px;
+  background-color: rgba(14,14,14,0.9);
+}

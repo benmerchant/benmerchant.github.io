@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Benjamin's Steakhouse</title>
+    <meta name="author" content="Ben Merchant">
+    <meta name="date" content="December 3, 2018" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+  </head>
+  <body>
+    <!-- got the hex code for BG-DARK from BS source, converted to RGB for transparency-->
+    <nav class="navbar navbar-dark navbar-expand-lg fixed-top bs-gray-dark">
+      <a href="#" class="navbar-brand">Benjamin's Steakhouse</a>
+      <!-- Hamburger button. Only appears on LARGE or greater -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navContent" aria-controls="navContent" aria-expanded="false" aria-label="Navigation Toggler">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- Navigation Content: menu items -->
+      <div class="collapse navbar-collapse" id="navContent">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+          <!-- come back to add "active" class functionality -->
+          <li class="nav-item">
+            <a href="#" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Menu</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Reservations</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- this is where page content goes (after navbar) -->
+    <main role="main" class="container-fluid bg-white" id="big-box">
+      <section id="top">
+        <div class="row">
+          <div class="col-12">
+            <!-- overlay content here -->
+          </div>
+        </div>
+      </section> <!-- end top section -->
+      <!-- about section -->
+      <section id="about" class="py-5 text-center">
+        <div class="row"> <!-- # row 2-->
+          <div class="col-12 mb-4">
+            <!-- Bootstrap padding utilities -->
+            <div class="py-3 section-header">
+              <h1 class="mb-3 text-uppercase">Our Steakhouse</h1>
+            </div>
+          </div> <!-- end section header col -->
+        </div> <!-- # end row 1-->
+        <div class="row"> <!-- # row 2-->
+          <div class="col-lg-4">
+            <!-- using another .container-fluid to utilize the grid system  -->
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-12 d-md-none d-lg-block">
+                  <img class="w-100 max-w-100-per d-block" src="assets/img/server_2.jpg" title="One of our happy servers">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-6 d-sm-none d-md-block">
+                  <img class="w-100" src="assets/img/server_2.jpg" title="One of our happy servers">
+                </div>
+                <div class="col-6 d-sm-none d-md-block">
+                  <img class="w-100" src="assets/img/server_2.jpg" title="One of our happy servers">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-8">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            <br><br>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </div>
+        </div>
+
+        </div> <!-- # end row 2-->
+      </section> <!-- end about section -->
+      <!-- reviews section -->
+      <section id="reviews" class="py-5 text-center text-white">
+        <div class="row">
+          <div class="col-12">
+            <!-- Bootstrap padding utilities -->
+            <div class="py-3 section-header">
+              <h1 class="mb-3 text-uppercase">Reviews</h1>
+            </div>
+          </div> <!-- end section header col -->
+        </div> <!-- end section header row -->
+        <!-- the actual review slider goes here!!! -->
+        <div class="row">
+          <div class="col-12 px-5">
+            <blockquote class="blockquote text-center px-5">
+              <p class="font-weight-bold mt-1 mb-3">
+                This place was a lot of fun and very diverse. They gave me a free drink for my birthday. My husband got mad becuase our waitress was hitting on me. Can't wait to come back without him.
+              </p>
+              <footer>- Janice Florinski, <cite title="Technically Charleston">Kanawha City, WV</cite></footer>
+            </blockquote>
+          </div>
+        </div>
+      </section> <!-- end Reviews section -->
+      <!-- menu section -->
+      <section id="menu" class="py-5 text-center">
+        <div class="row">
+          <div class="col-12">
+            <div class="py-3 section-header">
+              <h1 class="mb-3 text-uppercase">Menu</h1>
+            </div>
+          </div> <!-- end section header col -->
+        </div> <!-- end section header row -->
+        <!-- the menu headings go here!!! -->
+        <div class="row">
+          <div class="col-12">
+            <ul class="d-flex flex-row flex-nowrap justify-content-around p-0 m-0" id="menu-headings" title="Used Flexbox for this row">
+              <li>Favorites</li>
+              <li>Appetizers</li>
+              <li>Soups/Salads</li>
+              <li>Steaks</li>
+              <li>Seafood</li>
+              <li>Dessert</li>
+            </ul>
+            <br>
+            <div class="btn-group btn-group-lg" role="group">
+                <button type="button" class="btn btn-dark p-4">Favorites</button>
+                <button type="button" class="btn btn-dark p-4">Appetizers</button>
+                <button type="button" class="btn btn-dark p-4">Soups/Salads</button>
+                <button type="button" class="btn btn-dark p-4">Steaks</button>
+                <button type="button" class="btn btn-dark p-4">Seafood</button>
+                <button type="button" class="btn btn-dark p-4">Dessert</button>
+            </div>
+          </div>
+        </div> <!-- end menu headings row -->
+        <!-- the menu item cards go here!!! -->
+        <!-- we are going to assume that all of the photos are the exact same dimensions -->
+        <!-- 3 columns on LG and up -->
+        <!-- 2 columns on MD and up -->
+        <!-- Smaller screens, single column -->
+        <div class="row my-3">
+          <div class="col-lg-4 col-md-6 col-12 d-flex justify-content-center">
+            <div class="card card-helper">
+              <img class="card-img-top zoom" src="assets/img/steak_lobster_1.jpg" title="Food item">
+              <div class="card-body">
+                <h5 class="card-title">Filet & Lobster Tail</h5>
+                <p class="card-text">Grade A beef from Kansas served with lobster from Maine</p>
+                <h5 class="mt-1">$42</h5>
+              </div>
+            </div>
+          </div> <!-- end item card column div -->
+          <div class="col-lg-4 col-md-6 col-12 d-flex justify-content-center">
+            <div class="card card-helper">
+              <img class="card-img-top zoom" src="assets/img/steak_lobster_1.jpg" title="Food item">
+              <div class="card-body">
+                <h5 class="card-title">Filet & Lobster Tail</h5>
+                <p class="card-text">Grade A beef from Kansas served with lobster from Maine</p>
+                <h5 class="mt-1">$42</h5>
+              </div>
+            </div>
+          </div> <!-- end item card column div -->
+          <div class="col-lg-4 col-md-6 col-12 d-flex justify-content-center">
+            <div class="card card-helper">
+              <img class="card-img-top zoom" src="assets/img/steak_lobster_1.jpg" title="Food item">
+              <div class="card-body">
+                <h5 class="card-title">Filet & Lobster Tail</h5>
+                <p class="card-text">Grade A beef from Kansas served with lobster from Maine</p>
+                <h5 class="mt-1">$42</h5>
+              </div>
+            </div>
+          </div> <!-- end item card column div -->
+          <div class="col-lg-4 col-md-6 col-12 d-flex justify-content-center">
+            <div class="card card-helper">
+              <img class="card-img-top zoom" src="assets/img/steak_lobster_1.jpg" title="Food item">
+              <div class="card-body">
+                <h5 class="card-title">Filet & Lobster Tail</h5>
+                <p class="card-text">Grade A beef from Kansas served with lobster from Maine</p>
+                <h5 class="mt-1">$42</h5>
+              </div>
+            </div>
+          </div> <!-- end item card column div -->
+          <div class="col-lg-4 col-md-6 col-12 d-flex justify-content-center">
+            <div class="card card-helper">
+              <img class="card-img-top zoom" src="assets/img/steak_lobster_1.jpg" title="Food item">
+              <div class="card-body">
+                <h5 class="card-title">Filet & Lobster Tail</h5>
+                <p class="card-text">Grade A beef from Kansas served with lobster from Maine</p>
+                <h5 class="mt-1">$42</h5>
+              </div>
+            </div>
+          </div> <!-- end item card column div -->
+          <div class="col-lg-4 col-md-6 col-12 d-flex justify-content-center">
+            <div class="card card-helper">
+              <img class="card-img-top zoom" src="assets/img/steak_lobster_1.jpg" title="Food item">
+              <div class="card-body">
+                <h5 class="card-title">Filet & Lobster Tail</h5>
+                <p class="card-text">Grade A beef from Kansas served with lobster from Maine</p>
+                <h5 class="mt-1">$42</h5>
+              </div>
+            </div>
+          </div> <!-- end item card column div -->
+        </div> <!-- end menu item row -->
+        <!-- the link to full menu go here!!! -->
+        <div class="row mt-5">
+          <div class="col">
+            <hr class="menu-rule">
+          </div>
+          <div class="col-auto">
+            <a href="menu.html" class="btn btn-lg btn-danger">Full Menu</a>
+          </div>
+          <div class="col">
+            <hr class="menu-rule">
+          </div>
+        </div>
+      </section> <!-- end menu section -->
+      <!-- events section -->
+      <section id="events" class="py-5 text-center">
+        <div class="row">
+          <div class="col-12">
+            <!-- Bootstrap padding utilities -->
+            <div class="py-3 section-header text-white">
+              <h1 class="mb-3 text-uppercase">Upcoming Events</h1>
+            </div>
+          </div>
+        </div><!-- end section header row -->
+        <!-- the actual event carousel goes here!!! -->
+        <div class="row my-5">
+          <div class="col-1"></div>
+          <div class="col-10">
+
+            <!-- begin actual CAROUSEL div-->
+            <div id="eventCarousel" class="carousel slide" data-ride="carousel">
+              <ol class="carousel-indicators">
+                <li class="active indicator-fix" data-target="eventCarousel" data-slide-to="0"></li>
+                <li class="indicator-fix" data-target="eventCarousel" data-slide-to="1"></li>
+                <li class="indicator-fix" data-target="eventCarousel" data-slide-to="2"></li>
+              </ol>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="container">
+                    <div class="card">
+                      <div class="row">
+                        <div class="col-6">
+                          <img class="d-block w-100" src="assets/img/five_k.jpg" title="Five Thousand Meters">
+                        </div>
+                        <div class="col-6 p-5">
+                          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="container">
+                    <div class="card">
+                      <div class="row">
+                        <div class="col-6">
+                          <img class="d-block w-100" src="assets/img/school_kids_with_teacher.jpg" title="Five Thousand Meters">
+                        </div>
+                        <div class="col-6 py-5">
+                          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="container">
+                    <div class="card">
+                      <div class="row">
+                        <div class="col-6">
+                          <img class="d-block w-100" src="assets/img/car_wash.jpg" title="Five Thousand Meters">
+                        </div>
+                        <div class="col-6 py-5">
+                          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <a class="carousel-control-prev" href="#eventCarousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon icon-fix" aria-hidden="true"></span>
+              </a>
+              <a class="carousel-control-next" href="#eventCarousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon icon-fix" aria-hidden="true"></span>
+              </a>
+            </div> <!-- end actual CAROUSEL div-->
+          </div>
+          <div class="col-1"></div>
+        </div> <!-- end events carousel -->
+      </section> <!-- end events section -->
+      <!-- reservations section -->
+      <section id="reservations" class="py-5 text-center">
+        <div class="row">
+          <div class="col-12">
+            <!-- Bootstrap padding utilities -->
+            <div class="py-3 section-header">
+              <h1 class="mb-3 text-uppercase">Reservations</h1>
+            </div>
+          </div>
+        </div> <!-- end section header row -->
+        <!-- reservation form goes here -->
+        <div class="row">
+          <div class="col-lg-6 py-5">
+            <form class="">
+              <div class="row px-4">
+                <div class="col-md-6">
+                  <input type="text" class="form-control my-2" placeholder="Date">
+                  <input type="text" class="form-control my-2" placeholder="Time">
+                  <input type="text" class="form-control my-2" placeholder="Party Size">
+                </div>
+                <div class="col-md-6">
+                  <input type="text" class="form-control my-2" placeholder="Name">
+                  <input type="text" class="form-control my-2" placeholder="Phone">
+                  <input type="text" class="form-control my-2" placeholder="Email">
+                </div>
+              </div>
+              <div class="row">
+                <button type="submit" class="btn btn-dark w-150-static mx-auto">Book a Table</button>
+              </div>
+            </form>
+          </div>
+          <div class="col-lg-6">
+              <img class="w-100 max-w-400 mx-auto" src="assets/img/eat_card_transparent.png" title="Thank you https://www168.lunapic.com/editor/ for the free photo editing!">
+          </div>
+        </div> <!-- end reservation form row -->
+      </section>
+      <!-- all other sections are py-5 -->
+      <!-- but I want this video to be flush with the bottom -->
+      <section id="video" class="text-white text-center pt-5">
+        <div class="row">
+          <div class="col-12">
+            <div class="py-3 section-header">
+              <h1 class="mb-3 text-uppercase">Cool Video</h1>
+            </div>
+          </div>
+        </div> <!-- end section header row -->
+        <div class="row m-0 pt-5">
+          <div class="vid-div">
+            <video class="d-block w-100" poster="assets/img/prime_rib_1_resize_title.jpg" controls>
+              <source src="assets/video/waiter.mp4" type="video/mp4">
+              Your lame browser does not support the video tag.
+            </video>
+          </div>
+        </div> <!-- end video row -->
+      </section>
+      <section id="blog" class="py-5 text-center">
+        <div class="row">
+          <div class="col-12">
+            <!-- Bootstrap padding utilities -->
+            <div class="py-3 section-header">
+              <h1 class="mb-3 text-uppercase">Blog</h1>
+            </div>
+          </div> <!-- end section header col -->
+        </div> <!-- end section header row -->
+        <!-- actual blog previews go here -->
+        <div class="container mt-5">
+          <div class="row">
+            <div class="col-lg-3">
+              <div class="card w-100 border-0 rounded-0 blog-card">
+                <div class="img-holder">
+                  <img class="card-img-top rounded-0" src="assets/img/obamas_dining.jpg" title="Michelle Obama 2020">
+                </div>
+                <div class="card-body blogposts text-left p-0">
+                  <a href="blog.html"><h5 class="card-title">The Obama's Paid Us a Visit</h5></a>
+                  <span class="bg-dark text-white p-1">Oct 31, 2018</span>
+                  <p class="card-text my-2 text-muted">On an inauspicious Wednesday, the former POTUS and FLOTUS dropped in unannounced.<p>
+                </div>
+                <div class="card-footer bg-white text-black-50">
+                  'X' people talking about this
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3">
+              <div class="card w-100 border-0 rounded-0 blog-card">
+                <div class="img-holder">
+                  <img class="card-img-top rounded-0" src="assets/img/obamas_dining.jpg" title="Michelle Obama 2020">
+                </div>                <div class="card-body blogposts text-left p-0">
+                  <a href="blog.html"><h5 class="card-title">The Obama's Paid Us a Visit</h5></a>
+                  <span class="bg-dark text-white p-1">Oct 31, 2018</span>
+                  <p class="card-text my-2 text-muted">On an inauspicious Wednesday, the former POTUS and FLOTUS dropped in unannounced.<p>
+                </div>
+                <div class="card-footer bg-white text-black-50">
+                  'X' people talking about this
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3">
+              <div class="card w-100 border-0 rounded-0 blog-card">
+                <img class="card-img-top rounded-0" src="assets/img/obamas_dining.jpg" title="Michelle Obama 2020">
+                <div class="card-body blogposts text-left p-0">
+                  <a href="blog.html"><h5 class="card-title">The Obama's Paid Us a Visit</h5></a>
+                  <span class="bg-dark text-white p-1">Oct 31, 2018</span>
+                  <p class="card-text my-2 text-muted">On an inauspicious Wednesday, the former POTUS and FLOTUS dropped in unannounced.<p>
+                </div>
+                <div class="card-footer bg-white text-black-50">
+                  'X' people talking about this
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3">
+              <div class="card w-100 border-0 rounded-0 blog-card">
+                <div class="img-holder">
+                  <img class="card-img-top rounded-0" src="assets/img/obamas_dining.jpg" title="Michelle Obama 2020">
+                </div>
+                <div class="card-body blogposts text-left p-0">
+                  <a href="blog.html"><h5 class="card-title">The Obama's Paid Us a Visit</h5></a>
+                  <span class="bg-dark text-white p-1">Oct 31, 2018</span>
+                  <p class="card-text my-2 text-muted">On an inauspicious Wednesday, the former POTUS and FLOTUS dropped in unannounced.<p>
+                </div>
+                <div class="card-footer bg-white text-black-50">
+                  'X' people talking about this
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- link to full blog here -->
+        <div class="row mt-5">
+          <div class="col">
+            <hr class="menu-rule">
+          </div>
+          <div class="col-auto">
+            <a href="blog.html" class="btn btn-lg btn-danger">Full Blog</a>
+          </div>
+          <div class="col">
+            <hr class="menu-rule">
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer w-100 text-secondary d-flex align-items-center">
+      <div class="container d-flex justify-content-between">
+        <h3>This is a footer</h3>
+        <span></span>
+        <h4>&copy; 2018 <a target="_blank" class="text-secondary" href="https://github.com/benmerchant">Ben Merchant</a></h4>
+      </div>
+    </footer>
+    <script type="text/javascript" src="assets/js/jquery.js"></script>
+    <script type="text/javascript" src="assets/js/bootstrap.js"></script>
+  </body>
+</html>
