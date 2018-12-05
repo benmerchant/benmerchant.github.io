@@ -1,2 +1,17 @@
+Dec 4---------
+
 Viewport Height
 em vs rem vs px vs vw/vh
+
+
+Dec 5-----------
+I went to BV's site to appropriate their favicon
+I noticed that the rel attribute had two values
+<link rel="shortcut icon" href="http://www.bridgevalley.edu/sites/default/files/favIcon.png" type="image/png">
+Excuse me, what the heck?
+Never heard of shortcut. Found and article from 2010 called rel="shortcut icon" considered harmful
+------ link: https://mathiasbynens.be/notes/rel-shortcut-icon
+BTW, BV was founded in 2014
+Another supporting thread from StackOverflow
+https://stackoverflow.com/questions/10218178/necessary-to-add-link-tag-for-favicon-ico
+The question was asked and answered in 2012
