@@ -13,35 +13,34 @@
   <body>
     <!-- got the hex code for BG-DARK from BS source, converted to RGB for transparency-->
     <nav class="navbar navbar-dark navbar-expand-lg fixed-top bs-gray-dark">
-      <a href="https://benmerchant.github.io/benjaminsSteakhouseForJacobPreview/" class="navbar-brand">
-        <i class="fas fa-utensils"></i>  Benjamin's Steakhouse
-      </a>
-      <!-- Hamburger button. Only appears on LARGE or greater -->
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navContent" aria-controls="navContent" aria-expanded="false" aria-label="Navigation Toggler">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <!-- Navigation Content: menu items -->
-      <div class="collapse navbar-collapse" id="navContent">
-        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-          <!-- come back to add "active" class functionality -->
-          <li class="nav-item">
-            <a href="#" class="nav-link">Home</a>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link">Menu</a>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link">Reservations</a>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link">Blog</a>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link">Contact Us</a>
-          </li>
-        </ul>
-      </div>
+      <div class="container">
+        <a href="https://benmerchant.github.io/benjaminsSteakhouseForJacobPreview/" class="navbar-brand">
+          <i class="fas fa-utensils"></i>  Benjamin's Steakhouse
+        </a>
+        <!-- Hamburger button. Only appears on LARGE or greater -->
+        <!-- using text-white for hamburger... .navbar-dark makes it white, but wiht 0.5 opacity -->
+        <!-- .border-0 on the button. can't remove .navbar-toggler as it provides other styles  -->
+              <!-- however, now the border when you click isn't as pretty -->
+        <button class="navbar-toggler text-white border-0" type="button" data-toggle="collapse" data-target="#navContent" aria-controls="navContent" aria-expanded="false" aria-label="Navigation Toggler">
+          <!-- <span class="navbar-toggler-icon"></span> -->
+          <!-- switched from BS built-in hamburger to fontawesome both fetch an SVG from the web but with the BS class it picks a different one based on which class you use. idk, feels better this way. -->
+          <i class="fas fa-bars" data-fa-transform="grow-4"></i>
+        </button>
+        <!-- Navigation Content: menu items -->
+        <div class="collapse navbar-collapse" id="navContent">
+          <!-- changed to mr-auto from ml-auto|.navbar-right deprecated in v4|simplest solution compared to float or even flexbox -->
+          <!-- moved classes from <li>s to <a>s and completely removed the <ul><li> structure. the code is more readable this way.  -->
+          <div class="navbar-nav ml-auto mt-2 mt-lg-0">
+              <a href="#" class="nav-item nav-link active">Home</a>
+              <a href="#" class="nav-item nav-link">Menu</a>
+              <a href="#" class="nav-item nav-link">Reservations</a>
+              <a href="#" class="nav-item nav-link">Blog</a>
+              <a href="#" class="nav-item nav-link">Contact Us</a>
+          </div>
+        </div>
+      </div> <!-- # end div.container -->
     </nav>
+
     <!-- this is where page content goes (after navbar) -->
     <main role="main" class="container-fluid bg-white" id="big-box">
       <section id="top">
@@ -439,9 +438,14 @@
         </div>
       </section>
     </main>
+
     <footer class="footer w-100 text-secondary d-flex align-items-center">
       <div class="container d-flex justify-content-between">
         <h3>This is a footer</h3>
+        <!--
+          empty span element for flexbox justification
+          is this preferable to .float-left/-right?
+        -->
         <span></span>
         <h4>&copy; 2018 <a target="_blank" class="text-secondary" href="https://github.com/benmerchant">Ben Merchant</a></h4>
       </div>

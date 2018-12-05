@@ -1,13 +1,13 @@
 /*
-Course: CSCT 230
-Assignment: Final Project: Bootstrap
-Author: github.com/BenMerchant
-Created: December 3, 2018
+---> Course: CSCT 230
+---> Assignment: Final Project: Bootstrap
+---> Author: github.com/BenMerchant
+---> Created: December 3, 2018
 */
 
 /* Global Styles */
 
-html{background-color: black;} /* testing porpoises only*/
+html{background-color: red;} /* testing porpoises only*/
 /* I do this to every new HTML doc I create */
 html { font-size: 1rem;}
 html,body,h1,h2,h3,h4,h5,p {
