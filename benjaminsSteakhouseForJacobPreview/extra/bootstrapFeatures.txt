@@ -1,3 +1,5 @@
+-------------------Dec 3th-------------------
+
 Components
 - Navbar
 - Button
@@ -38,3 +40,14 @@ like when using ".card"
 Which just reminded me....
 I need to go back and do it for the cards,
 as right now, I am only using one image for all items
+
+-------------------Dec 5th-------------------
+- This is turning into just notes for my presentation...
+
+- Uploaded to my github pages site to show my boss, Jacob what I've been working on
+- Added font awesome to get some icons going
+-- both a steak "knife" and a "cow" are PRO icons only lol
+-- as this isn't the root folder in my repo nor my BVCSCT dir the "home" href will have to be absolute
+-- https://www.seoclarity.net/resources/knowledgebase/difference-relative-absolute-url-15325/
+-- guess its good for SEO as well ^^^^
+--- TO DO --- : fix it so its nice for Jason when for actual submission
