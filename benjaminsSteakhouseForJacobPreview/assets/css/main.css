@@ -30,6 +30,18 @@ body {
   margin-bottom: 99px;
 }
 
+.nunito-font, p {
+  font-family: 'Nunito', sans-serif;
+}
+
+.titillium-font, .section-header, .blogposts, .btn, .card-helper div h5 {
+  font-family: 'Titillium Web', sans-serif;
+}
+/* clean up later, this covers the menu title and price */
+.card-helper div h5 {
+  font-weight: bold;
+}
+
 /* this is the same element as .container-fluid */
 main#big-box {
   background-color: grey;
