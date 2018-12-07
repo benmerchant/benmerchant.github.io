@@ -7,7 +7,8 @@
 
 /* Global Styles */
 
-html{background-color: red;} /* testing porpoises only*/
+/*html{background-color: red;}*/ /* testing porpoises only*/
+
 /* I do this to every new HTML doc I create */
 html { font-size: 1rem;}
 html,body,h1,h2,h3,h4,h5,p {
@@ -70,6 +71,9 @@ main#big-box {
 }
 #reservations {
   background: url(../img/contemporary_china_2.png) repeat;
+}
+#audio {
+  background: url(../img/sheet_music.jpg) no-repeat center center;
 }
 
 /* This is the small line after each section heading */
