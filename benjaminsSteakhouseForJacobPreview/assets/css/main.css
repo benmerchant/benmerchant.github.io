@@ -106,7 +106,7 @@ main#big-box {
 .blockquote {
   font-size: 1.8rem;
 }
-
+/* the <hr>s around buttons */
  .menu-rule {
    border-width: 5px;
    border-color: red;
@@ -116,23 +116,44 @@ ul#menu-headings{
 }
 ul#menu-headings li{
   display: inline-block;
-  font-size: 2rem;
+  font-size: 2.2rem;
   color: black;
-  padding: 1rem;
+  padding: .66rem;
   font-weight: bold;
   /* background-color: rgba(245,245,245,1.0);
-  border-radius: 4px;
+
   border-color: lightgrey;
   border-width: 1px;
   border-style: solid; */
 }
 ul#menu-headings li:hover{
   cursor: pointer;
-  /* background-color: rgba(0,0,0,0.75); */
+  background-color: rgba(0,0,0,0.35);
+  border-radius: .25rem;
 }
 
-div.card-helper{
-  max-width: 23rem;
+
+@media (max-width: 767px) {
+  div.card-helper{
+    width: 80%;
+  }
+  /* BS doesn't have responive border utilites.  */
+  /* .25rem matches BS card default border-radius */
+  img.carousel-img {
+    border-radius: .25rem .25rem 0 0;
+  }
+}
+@media (min-width: 768px) {
+  div.card-helper{
+    max-width: 23rem;
+  }
+  img.carousel-img {
+    border-radius: .25rem 0 0 .25rem;
+  }
+}
+/* when hovering over the img on desktop,
+this will keep the photo within the confines of its original dimensions */
+.img-helper {
   overflow: hidden;
 }
 
@@ -207,9 +228,6 @@ section#blog {
   font-size: 1.4rem; /* normally 1.25 */
 }
 
-div.img-holder{
-    overflow: hidden;
-}
 .blog-card img {
   transition: all 0.3s ease 0s;
   background-color: black;
