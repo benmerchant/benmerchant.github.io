@@ -68,12 +68,13 @@ main#big-box {
 }
 
 #top {
-  background: url(../img/steak_1.jpg) no-repeat center center;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/steak_1.jpg) no-repeat center center;
   position: relative;
   height: 100vh; /* learned about viewport height in this course */
   width: 100%;
   background-size: cover;
 }
+
 #reviews {
   background: url(../img/candle_bar.jpg) no-repeat center center;
   background-size: cover;
@@ -147,6 +148,9 @@ ul#menu-headings li:hover{
   img.carousel-img {
     border-radius: .25rem .25rem 0 0;
   }
+  p.main-logo{
+    font-size: 3.4rem;
+  }
 }
 @media (min-width: 768px) {
   div.card-helper{
@@ -154,6 +158,15 @@ ul#menu-headings li:hover{
   }
   img.carousel-img {
     border-radius: .25rem 0 0 .25rem;
+  }
+  p.main-logo{
+    font-size: 4.6rem;
+  }
+}
+@media (min-width: 992px) {
+
+  p.main-logo{
+    font-size: 5.6rem;
   }
 }
 /* when hovering over the img on desktop,
@@ -277,4 +290,9 @@ h1.x-plus {
 }
 h1.x-is-plus {
   transform: rotate(1125deg);
+}
+p.main-logo{
+  font-weight: bolder;
+  text-transform: capitalize;
+  color: white;
 }
