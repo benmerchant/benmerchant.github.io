@@ -131,9 +131,14 @@ ul#menu-headings li:hover{
   background-color: rgba(0,0,0,0.35);
   border-radius: .25rem;
 }
+@media (max-width: 575.98px) {
+  ul#menu-headings li {
+    font-size: 1.8rem;
+  }
+}
 
 
-@media (max-width: 767px) {
+@media (max-width: 767.98px) {
   div.card-helper{
     width: 80%;
   }
@@ -170,7 +175,10 @@ this will keep the photo within the confines of its original dimensions */
 .max-w-100-per {
   max-width: 100%;
 }
-
+.wh-0 {
+  width: 0;
+  height: 0;
+}
 
 
 /* video classes */
@@ -246,4 +254,27 @@ footer.footer {
   bottom: 0;
   height: 99px;
   background-color: rgba(14,14,14,0.9);
+}
+
+/* display for current breakpoint */
+.bootstrap-floater {
+  background-color: black;
+  z-index: 2100;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  transition: all 3s ease 0s;
+  max-width: 80%;
+}
+div#floating-content {
+  transition: all 4s ease 0s;
+  overflow: hidden;
+  /* margin-left: 50px; */
+}
+
+h1.x-plus {
+  transition: all 3s ease 0s;
+}
+h1.x-is-plus {
+  transform: rotate(1125deg);
 }
