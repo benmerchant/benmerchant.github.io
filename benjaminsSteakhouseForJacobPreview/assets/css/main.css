@@ -37,6 +37,9 @@ body {
 .titillium-font, .section-header, .blogposts, .btn, .card-helper div h5 {
   font-family: 'Titillium Web', sans-serif;
 }
+.italianno-font {
+  font-family: 'Italianno', cursive;
+}
 /* clean up later, this covers the menu title and price */
 .card-helper div h5 {
   font-weight: bold;
@@ -113,11 +116,15 @@ ul#menu-headings{
 }
 ul#menu-headings li{
   display: inline-block;
-  font-size: 1.25rem;
-  color: white;
+  font-size: 2rem;
+  color: black;
   padding: 1rem;
-  background-color: rgba(0,0,0,0.6);
+  font-weight: bold;
+  /* background-color: rgba(245,245,245,1.0);
   border-radius: 4px;
+  border-color: lightgrey;
+  border-width: 1px;
+  border-style: solid; */
 }
 ul#menu-headings li:hover{
   cursor: pointer;

@@ -9,6 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Italianno" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/bootstrap.css">
     <link rel="stylesheet" href="assets/css/main.css">
   </head>
@@ -124,15 +125,17 @@
         <!-- the menu headings go here!!! -->
         <div class="row">
           <div class="col-12">
-            <ul class="d-flex flex-row flex-nowrap justify-content-around p-0 m-0" id="menu-headings" title="Used Flexbox for this row">
+            <ul class="d-flex flex-row flex-wrap justify-content-around p-0 m-0 italianno-font" id="menu-headings" title="Used Flexbox for this row">
               <li>Favorites</li>
               <li>Appetizers</li>
               <li>Soups/Salads</li>
+              <li class="d-block w-100 p-0 d-md-none"></li>
               <li>Steaks</li>
               <li>Seafood</li>
               <li>Dessert</li>
             </ul>
-            <br>
+            <!-- This is cool but wont resize well -->
+            <!-- <br>
             <div class="btn-group btn-group-lg" role="group">
                 <button type="button" class="btn btn-dark p-4">Favorites</button>
                 <button type="button" class="btn btn-dark p-4">Appetizers</button>
@@ -141,7 +144,7 @@
                 <button type="button" class="btn btn-dark p-4">Seafood</button>
                 <button type="button" class="btn btn-dark p-4">Dessert</button>
             </div>
-          </div>
+          </div> -->
         </div> <!-- end menu headings row -->
         <!-- the menu item cards go here!!! -->
         <!-- we are going to assume that all of the photos are the exact same dimensions -->
